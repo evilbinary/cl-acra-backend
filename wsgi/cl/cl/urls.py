@@ -5,6 +5,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'myproject.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
+    url(r'^cl/', include("acra.urls")),
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^admin/', include(admin.site.urls)),
 )
